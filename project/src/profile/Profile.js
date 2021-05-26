@@ -4,9 +4,9 @@ const Profile = (props) => {
   
     return (
         <div>
+        <div  className="img">  {props.children}</div> 
+        <p style={{textAlign:'justify', color: 'green', fontFamily:'cursive'}}> Nom Prenom: {props.fullName} <br/> Profession: {props.profession} <br/>Bio: {props.Bio}</p>
         
-        <p style={{textAlign:'justify', color: 'green', fontFamily:'cursive'}}> {props.fullName} <br/> {props.profession} <br/> {props.Bio}</p>
-        <div  className="img">{props.children}</div>
         </div>
         
         
